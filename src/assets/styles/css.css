@@ -1,0 +1,735 @@
+/*********************************************************************************************
+OPEENY GODFREY (https://opeeny.github.io)
+/*------------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*-----------------
+
+***************** Background Color *****************
+
+[ Body, content Boxes ]   ===> #2c3e50
+
+******************** Text Color ********************
+
+[ Headings h1 & h2 & h3 ]   ===> #FFF
+[ Content Color ]           ===> #FFF
+[ Experience Headings ]     ===> #1894ff
+[ Paragraphs ]              ===> #BBB
+
+[ Portfolio Filter Links ]
+a (standard):	#BBB (Gray)
+a (hover):	#1894ff (blue)
+a (active):	#1894ff (blue)
+
+[ SideMenu Links ]
+a (standard):	#869cb1 (Gray blue)
+a (hover):	#FFF (White)
+a (active):	#FFF (White)
+------------------------------------------------------------------*/
+/*Responsive design*/
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+.main-content-color-txt, .opeeny-btn-1, .opeeny-btn-1:hover, .opeeny-btn-1:focus, .opeeny-btn-1:active, .main-page-content > section, .control-bar, .slide-menu-container .slide-menu .opeeny-user-info .social-media a, .slide-menu-container .slide-menu .opeeny-user-info .opeeny-links-toggle span, .slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links a:hover, .slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links li.active a, .opeeny-facts-about-me .opeeny-info-list .single-info .info-icon, .opeeny-facts-about-me .opeeny-info-list .single-info .info-icon i, .testimonials .testi-user-info h3, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info, .opeeny-skills .soft-skills .progress-container .progress-val, .normal-post .entry-header .post-category a, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post .entry-content .entry-post-info h4 a, .normal-post .entry-content .entry-expert .post-readMore a:hover, .normal-post .entry-footer .entry-tags a:hover, .contact-form .opeeny-form .form-control {
+  color: #FFFFFF;
+}
+
+.main-txt, .blue-color, .control-bar .copyright a, .control-bar .copyright i, .testimonials .testi-desc-box i:last-child, .port-box .opeeny-taps li:hover, .port-box .opeeny-taps li.active, .education-workHistory .timeline-title i, .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-header h3, .normal-post .entry-content .entry-post-info h4 a:hover, .normal-post .entry-content .entry-expert .post-readMore a.read-more-link, .appsLand-navbar.active-navbar .navbar-nav > li:hover, .appsLand-navbar.active-navbar .navbar-nav > li.active, .apps-footer .footer-bottom p a {
+  color: #1894ff;
+}
+
+.slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links a, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .project-category h5, .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-header p, .normal-post .entry-content .entry-post-info p, .normal-post .entry-content .entry-expert p, .normal-post .entry-content .entry-expert .post-readMore a, .normal-post .entry-footer .entry-tags a {
+  color: #869cb1;
+}
+
+.main-bg, body, .opeeny-btn-1, .opeeny-icon-box-container .opeeny-icon-box, .overlay-container, .control-bar, .slide-menu-container .slide-menu .opeeny-user-info .social-media, .slide-menu-container .slide-menu .opeeny-user-info .opeeny-img-box, .slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:after, .slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:before, .slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links, .testimonials .testi-box, .testimonials .testi-desc-box i:last-child, .port-box .opeeny-taps, .education-workHistory .timeline-content:before, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content .timeline-box .timeline-info, .normal-post .entry-header .post-category a, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .loading, .appsLand-navbar.active-navbar, .apps-footer .footer-top .footer-social-links a, .apps-footer .footer-bottom {
+  background: #2c3e50;
+}
+
+.main-bg-rgba, .opeeny-btn-1.btn-rgba, .opeeny-icon-list-box:hover .opeeny-list-info, .contact-form .opeeny-form .form-control {
+  background: rgba(44, 62, 80, 0.8);
+}
+
+ .opeeny-btn-1:before, .opeeny-icon-box-container .opeeny-icon-box:hover, .opeeny-icon-list-box:hover .opeeny-icon-box-container .opeeny-icon-box, .slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links li.active a i, .testimonials .testi-desc-box:before, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .opeeny-skills .technical-skills .progress-bar-container .progress.active .progress-bar, .opeeny-skills .technical-skills .progress-bar-container .progress .progress-bar.active, .opeeny-skills .technical-skills .progress-bar-container.primary-style .timer, .normal-post .entry-header .post-category a:hover, .normal-post .entry-header .post-share li a:hover, .normal-post .entry-header .post-share li span:hover, .normal-post .entry-header .post-share li span, .normal-post .entry-footer .entry-tags a:hover, .appsLand-navbar.active-navbar .menu-toggle .chart {
+  background: #1894ff;
+}
+
+.main-border-color, .testimonials .testi-desc-box i:last-child, .port-box .opeeny-taps li.active, .normal-post .entry-footer .entry-tags a:hover {
+  border-color: #1894ff;
+}
+
+.home .open-page a:hover {
+  background: rgba(24, 148, 255, 0.5);
+}
+.invisible {
+  display: hidden;
+}
+.content-txt-1, .opeeny-icon-list-box .opeeny-list-info p, .home .intro-section .opeeny-hello, .home .intro-section .opeeny-work-description, .my-information .opeeny-info-detail p, .testimonials .testi-user-info h5, .testimonials .testi-desc-box p, .port-box .opeeny-taps li, .education-workHistory .timeline-content .timeline-box .timeline-info .timeline-info-details p {
+  color: #BBB;
+}
+
+.main-shadow-1, .sakura-btn, .overlay-container, .control-bar, .slide-menu-container .slide-menu, .testimonials .testimonials-arrows, .testimonials .slick-dots i, .testimonials .testi-box, .testimonials .img-box img, .port-box .portfolio-items .portfolio-item, .port-box .portfolio-items .portfolio-item .port-data, .take-my-resume .opeeny-btn-1, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post:hover {
+  -webkit-box-shadow: 0 0 25px 1px #1b2838;
+  -o-box-shadow: 0 0 25px 1px #1b2838;
+  -moz-box-shadow: 0 0 25px 1px #1b2838;
+  box-shadow: 0 0 25px 1px #1b2838;
+}
+
+.main-shadow-2, .slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links li.active a i, .port-box .opeeny-taps, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info:hover, .education-workHistory .timeline-content:before, .education-workHistory .timeline-content .timeline-box .timeline-date, .education-workHistory .timeline-content .timeline-box .timeline-info, .sakura-demo2 .my-clients-logo .sakura-demo2-clients-slider .client-logo a:hover {
+  -webkit-box-shadow: 0 0 15px 0px #1b2838;
+  -o-box-shadow: 0 0 15px 0px #1b2838;
+  -moz-box-shadow: 0 0 15px 0px #1b2838;
+  box-shadow: 0 0 15px 0px #1b2838;
+}
+
+
+/* 2. general Style
+================================= */
+body {
+  overflow: hidden;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+.opeeny-container {
+  padding: 0 60px;
+  overflow: hidden;
+}
+
+.display-table {
+  display: table;
+  width: 100%;
+}
+
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.overlay-container {
+  height: 100%;
+  border: 5px solid #3a4a5d;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radiusx: 3px;
+}
+
+.overlay {
+  background: rgba(44, 62, 80, 0.5);
+  height: 100%;
+}
+
+.full-page {
+  height: 100vh;
+  overflow: visible !important;
+}
+
+.main-page-content {
+  width: calc(100% - 325px);
+  margin-left: 300px;
+  margin-right: 25px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.main-page-content > section {
+  padding: 25px 0;
+}
+
+.section-intro .opeeny-icon-box-container {
+  padding: 30px;
+}
+.section-intro .opeeny-icon-box-container .opeeny-icon-box {
+  width: 120px;
+  height: 120px;
+}
+.section-intro .opeeny-icon-box-container .opeeny-icon-box .opeeny-icon {
+  line-height: 120px;
+}
+.section-intro .opeeny-icon-box-container .opeeny-icon-box:after {
+  left: calc(50% - 60px);
+  width: 120px;
+}
+.section-intro .opeeny-icon-box-container .opeeny-icon-box:before {
+  left: calc(50% - 60px);
+  width: 120px;
+}
+.section-intro h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.opeeny-icon-list-box {
+  text-align: center;
+  position: relative;
+  padding-top: 60px;
+}
+.opeeny-icon-list-box .opeeny-icon-box-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.opeeny-icon-list-box .opeeny-list-info {
+  padding: 60px 15px 15px;
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+.opeeny-icon-list-box .opeeny-list-info h4 {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin: 20px 0 13px;
+  font-weight: 600;
+}
+.opeeny-icon-list-box .opeeny-list-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+  position: relative;
+  top: 50px;
+}
+.opeeny-icon-list-box:hover .opeeny-list-info p {
+  opacity: 1;
+  top: 0;
+}
+
+.opeeny-intro-section .overlay {
+  padding: 90px 0;
+}
+
+/* 3. aside
+================================= */
+.opeeny-aside {
+  position: fixed;
+  height: 100%;
+}
+
+/* 3.1 Control Bar */
+.control-bar {
+  height: 100%;
+  width: 44px;
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+.control-bar .menu-toggle {
+  display: none;
+}
+.control-bar .copyright {
+  position: absolute;
+  bottom: -30px;
+  white-space: nowrap;
+  margin: 0;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -o-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  line-height: 44px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 16px;
+  color: #788195;
+}
+.control-bar .copyright a {
+  font-weight: 600;
+}
+.control-bar .copyright i {
+  margin-left: 3px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* 3.2 Slide Menu */
+.slide-menu-container {
+  padding: 25px 0px 10px 25px;
+  width: 230px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  position: fixed;
+  left: 44px;
+}
+.slide-menu-container .slide-menu {
+  position: relative;
+}
+.slide-menu-container .slide-menu .opeeny-user-info {
+  position: relative;
+  z-index: 10;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media {
+  margin-bottom: 0;
+  border-bottom: 1px solid #3a4a5d;
+  overflow: hidden;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media li {
+  float: left;
+  width: 20%;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media li:first-child a {
+  border-left: 0;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media li:last-child a {
+  border-right: 0;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  border-right: 1px solid #3a4a5d;
+  border-left: 1px solid #22303e;
+  position: relative;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a i {
+  position: relative;
+  z-index: 2;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a:hover::before {
+  transform: scale(1);
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a.facebook:before {
+  background: #3b5998;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a.twitter:before {
+  background: #1da1f2;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a.behance:before {
+  background: #0057ff;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a.linkedin:before {
+  background: #0077b5;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media a.google-plus:before {
+  background: #db4437;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .social-media:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #22303e;
+  clear: both;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .opeeny-img-box {
+  padding: 10px;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .opeeny-img-box .opeeny-img {
+  display: block;
+  border: 2px solid yellowgreen;
+  border-radius: 50%;
+  
+}
+.slide-menu-container .slide-menu .opeeny-user-info .opeeny-img-box .opeeny-img img {
+  width: 100%;
+  padding: 1px;
+  opacity: 1.6;
+  border-radius: 50%;
+}
+.slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:after, .slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:before {
+  content: "";
+  display: inline-block;
+  height: 70px;
+  width: 50%;
+  position: absolute;
+  bottom: -27px;
+  z-index: 2;
+}
+.slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:after {
+  -webkit-transform: skewY(25deg);
+  -moz-transform: skewY(25deg);
+  -ms-transform: skewY(25deg);
+  -o-transform: skewY(25deg);
+  transform: skewY(25deg);
+}
+.slide-menu-container .slide-menu .opeeny-user-info.opeeny-menu-style-1:before {
+  right: 0;
+  -webkit-transform: skewY(-25deg);
+  -moz-transform: skewY(-25deg);
+  -ms-transform: skewY(-25deg);
+  -o-transform: skewY(-25deg);
+  transform: skewY(-25deg);
+}
+.slide-menu-container .slide-menu .opeeny-user-info .opeeny-links-toggle {
+  position: absolute;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  z-index: 3;
+}
+.slide-menu-container .slide-menu .opeeny-user-info .opeeny-links-toggle span {
+  cursor: pointer;
+  display: block;
+}
+.slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links {
+  margin-bottom: 0;
+  border-top: 1px solid #22303e;
+}
+.slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+.slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-top: 1px solid #3a4a5d;
+  border-bottom: 1px solid #22303e;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  font-size: 13px;
+}
+.slide-menu-container .slide-menu.opeeny-menu-style-2 .opeeny-links a i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 12px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-box-shadow: inset 0 0 15px 0px #1b2838;
+  -o-box-shadow: inset 0 0 15px 0px #1b2838;
+  -moz-box-shadow: inset 0 0 15px 0px #1b2838;
+  box-shadow: inset 0 0 15px 0px #1b2838;
+}
+.slide-menu-container .slide-menu .opeeny-links-toggle {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.slide-menu-container .slide-menu.menu-opend .opeeny-links {
+  bottom: 0px;
+}
+
+/* 4. Home
+================================= */
+.home {
+  background: url("../images/work.jpg") center center no-repeat scroll;
+  background-size: cover;
+}
+.home .intro-section {
+  vertical-align: middle;
+  height: 100%;
+  overflow: hidden;
+}
+.home .intro-section .opeeny-hello {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.home .intro-section .opeeny {
+  font-size: 90px;
+  margin: 10px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+.home .intro-section .opeeny-work-description {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* 5. About Me
+================================= */
+/* 5.1 About Introduction */
+.aboutMe .opeeny-intro-section {
+  background: url("../images/bg2.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+/* 5.2 My Information */
+.my-information {
+  padding: 90px 0;
+}
+.my-information .my-image img {
+  opacity: 0.7;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+.my-information .my-image img:hover {
+  opacity: 1;
+}
+.my-information .opeeny-info-detail h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+.my-information .opeeny-info-detail p {
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #3a4a5d;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+
+
+/*=======================================
+=            14. Responsive             =
+=========================================*/
+/* 14.1. Screen Width 992px */
+@media only screen and (max-width: 992px) {
+  .slide-menu-container {
+    left: -186px;
+  }
+
+  .control-bar .menu-toggle {
+    cursor: pointer;
+    padding: 8px;
+    display: block;
+    margin-top: 5px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .control-bar .menu-toggle .chart {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .control-bar .menu-toggle .chart:nth-child(2) {
+    margin: 8px 0;
+  }
+
+  .main-page-content {
+    width: calc(100% - 95px);
+    margin-left: 70px;
+    margin-right: 25px;
+    position: relative;
+    left: 0;
+  }  
+}
+/* 14.2. Screen Width 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-Y: visible;
+  }
+
+  .full-page {
+    min-height: 100vh;
+    height: auto;
+	height: 100%;
+  }
+  .full-page#home {
+    height: 100vh;
+  }
+
+  .slide-menu-container {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  .main-page-content {
+    width: calc(100% - 65px);
+    margin-left: 55px;
+    margin-right: 10px;
+  }
+  .main-page-content > section {
+    padding: 10px 0;
+  }
+
+   .main-page-content > section, .main-page-content > div,
+ .main-page-content .overlay {
+    padding: 80px 0;
+  }
+   .main-page-content > section.small-section, .sakura-demo2 .main-page-content > div.small-section,
+  .main-page-content .overlay.small-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .home .intro-section .opeeny {
+    font-size: 55px;
+    margin: 10px 0;
+  }
+ .home .intro-section h3 {
+    font-size: 19px !important;
+  }
+  .home .overlay {
+    padding-top: 195px;
+    padding-bottom: 150px;
+  }
+
+  .opeeny-container {
+    padding: 0 20px;
+  }
+
+  .section-intro .opeeny-icon-box-container .opeeny-icon-box {
+    width: 80px;
+    height: 80px;
+  }
+  .section-intro .opeeny-icon-box-container .opeeny-icon-box .opeeny-icon {
+    line-height: 80px;
+    font-size: 27px;
+  }
+  .section-intro .opeeny-icon-box-container .opeeny-icon-box:after {
+    left: calc(50% - 40px);
+    width: 80px;
+  }
+  .section-intro .opeeny-icon-box-container .opeeny-icon-box:before {
+    left: calc(50% - 40px);
+    width: 80px;
+  }
+  .section-intro h1 {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .home .intro-section .opeeny {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 7px 0;
+  }
+  .home .intro-section h3 {
+    font-size: 16px !important;
+  }
+
+  .aboutMe .opeeny-intro-section .opeeny-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .aboutMe .opeeny-service .opeeny-container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .aboutMe .my-clients-logo .opeeny-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .aboutMe .aboutMe .my-clients-logo .clients-slider {
+    margin: 0 -10px;
+  }
+  .aboutMe .my-clients-logo .client-logo {
+    margin: 0 10px;
+  }
+  .aboutMe .opeeny-facts-about-me .opeeny-container {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .control-bar .copyright {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
