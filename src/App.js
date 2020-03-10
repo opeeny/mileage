@@ -19,7 +19,7 @@ function App() {
           <AuthContextProvider>
             <ThemeToggle/>
             {/* <Dashboard/> */}
-            <Route exact path = '/dash'  component = {Dashboard}/>
+            <Route exact path = '/'  component = {Dashboard}/>
           </AuthContextProvider>
         </ThemeContextProvider>
         <Switch>

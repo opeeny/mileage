@@ -36,12 +36,12 @@ class Dashboard extends Component {
                 <div style = {{background: theme.ui, color: theme.bg}} className="slide-menu-container">
                     <div className="slide-menu menu-opend navbar-scrolled opeeny-menu-style-2">
                         <div className="opeeny-user-info">
-                            <ul className="social-media list-unstyled text-center">
-                                <li><Link to="/https" className="facebook" ><i className="fab fa-facebook"></i></Link></li>
-                                <li><Link to="https" className="twitter" ><i className="fab fa-twitter-square"></i></Link></li>
-                                <li><Link to="#!" className="google-plus"><i className="fab fa-google-plus"></i></Link></li>
-                                <li><Link to="https" className="linkedin" ><i className="fab fa-linkedin"></i></Link></li>
-                                <li><Link to="http" className="behance"><i className="fab fa-skype"></i></Link></li>
+                            <ul className="social-media list-unstyled text-center opeeny-links">
+                                <li className = "first"><Link to="/https" className="facebook" ><i className="fab fa-facebook"></i></Link></li>
+                                <li className = "first"><Link to="https" className="twitter" ><i className="fab fa-twitter-square"></i></Link></li>
+                                <li className = "first"><Link to="#!" className="google-plus"><i className="fab fa-google-plus"></i></Link></li>
+                                <li className = "first"><Link to="https" className="linkedin" ><i className="fab fa-linkedin"></i></Link></li>
+                                <li className = "first"><Link to="http" className="behance"><i className="fab fa-skype"></i></Link></li>
                             </ul>
 
                             <div className="opeeny-img-box">
