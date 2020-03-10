@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../layout/Footer';
 import { ThemeContext } from '../context/ThemeContext';
+import {Logout, ChangeTheme} from '../auth/Logout';
+
 
 class Dashboard extends Component {
 
@@ -31,7 +33,7 @@ class Dashboard extends Component {
                 </div>
 
 
-                <div className="slide-menu-container">
+                <div style = {{background: theme.ui, color: theme.bg}} className="slide-menu-container">
                     <div className="slide-menu menu-opend navbar-scrolled opeeny-menu-style-2">
                         <div className="opeeny-user-info">
                             <ul className="social-media list-unstyled text-center">
@@ -44,7 +46,7 @@ class Dashboard extends Component {
 
                             <div className="opeeny-img-box">
                                 <div id = "profile" className="opeeny-img">
-                                    <img src="../../assets/images/opeeny.jpg" alt=""/>
+                                <i class="fas fa-user"></i>
                                 </div>
                             </div>
                         </div>
@@ -53,23 +55,23 @@ class Dashboard extends Component {
                                 <li className="active">
                                     <Link to = "/"><i className="fa fa-home"></i>Dashboard</Link>
                                 </li>
-                                <li>
+                                <li className = "first">
                                     <Link to = "/suppliers"><i className="fa fa-laptop"></i>view suppliers</Link>
                                 </li>
-                                <li>
+                                <li  className = "first">
                                     <Link to = "/loaders"><i className="fa fa-laptop"></i>view suppliers</Link>
                                 </li>
-                                <li>
+                                <li  className = "first">
                                     <Link to = "/suppliers"><i className="fa fa-laptop"></i>view suppliers</Link>
                                 </li>
-                                <li>
+                                <li  className = "first">
                                     <Link to = "/suppliers"><i className="fa fa-laptop"></i>view suppliers</Link>
                                 </li>
-                                <li>
-                                    <Link to = "/suppliers"><i className="fa fa-laptop"></i>Help!</Link>
+                                <li  className = "first">
+                                    <Link to = "/suppliers"><i class="fas fa-question-circle"></i>Help!</Link>
                                 </li>
-                                <li>
-                                    <Link to = "/suppliers"><i className="fa fa-laptop"></i>Settings</Link>
+                                <li  className = "first">
+                                    <Link to = "/suppliers"><i className="fas fa-cog"></i>Settings</Link>
                                 </li>
                                 
                             </ul>
@@ -79,12 +81,15 @@ class Dashboard extends Component {
                 
                 </div>
 
-            </aside>   
-
-            <main className="main-page-content">
-            <section className="full-page" id="home">
+            </aside>  
+            <Logout />
+            <ChangeTheme/>
+            <main style = {{background: theme.ui, color: theme.bg}} className="main-page-content">
+            
+            <section style = {{background: theme.ui, color: theme.bg}} className="full-page" id="home">
             <div className="home overlay-container">
                 <div className="overlay">
+               
                     <div className="section-intro opeeny-container display-table">
                         <div className="display-table-cell">
                             <h3 className="opeeny-hello">HI, IAM</h3>
@@ -97,8 +102,8 @@ class Dashboard extends Component {
             </section>
             </main>
             <Footer/>
-</>
-       )
+    </>
+       );
        
    }
 }

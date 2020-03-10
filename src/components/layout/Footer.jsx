@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer  = (props) => {
   return (
-    <div>
-      <footer className=" container fixed-bottom">The Green MIleage, 2020</footer>
-    </div>
+    
+     <p className="text-center text-muted mt-md mb-md">&copy; Copyright 2020. All rights reserved. <a href="https://opeeny.github.io">Green Mile</a>.</p>
+   
   );
 }
 export default Footer
